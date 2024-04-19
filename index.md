@@ -10,9 +10,9 @@ permalink: index.html  # Is the only page that don't follow the partner /:path/i
 <img src="{{ page.root }}/fig/nvidia.png" alt="NVIDIA Logo" width="250">
 
 
-ECP Supercontainers Tutorial Session @ International Supercomputing Conference 2023 (ISC 2023)
+ECP Supercontainers Tutorial Session @ International Supercomputing Conference 2024 (ISC 2024)
 
-Date: 21 May 2023 2:00pm - 6:00pm, Central European Summer Time CEST (GMT+2)
+Date: 12 May 2024 9:00pm - 1:00pm, Central European Summer Time CEST (GMT+2)
 
 Location: Hamburg, Germany
 
