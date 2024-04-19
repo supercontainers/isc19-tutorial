@@ -16,7 +16,7 @@ Date: 12 May 2024 9:00pm - 1:00pm, Central European Summer Time CEST (GMT+2)
 
 Location: Hamburg, Germany
 
-Links: [ISC Schedule](https://app.swapcard.com/event/isc-high-performance-2023/planning/UGxhbm5pbmdfMTIyMDgwMA==) ; [Slide Materials](https://drive.google.com/file/d/10XlWXyGL4BKReNIYSw_9aiSlAGClCAK3/view?usp=share_link)
+Links: [ISC Agendal](https://www.isc-hpc.com/agenda-2024.html); Slides TBD
 
 Keywords: Containerized HPC, System Software and Runtime Systems, Scientific Software Development, DevOps
 
