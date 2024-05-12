@@ -1,0 +1,136 @@
+INFO:    Using cached SIF image
+                      :-) GROMACS - gmx grompp, 2018.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.2
+Executable:   /gromacs/bin.AVX2_256/gmx
+Data prefix:  /gromacs
+Working dir:  /group/pawsey/espn/ISC22preparation/isc-tutorial/exercises/gromacs_work
+Command line:
+  gmx grompp -f pme.mdp
+
+Ignoring obsolete mdp entry 'title'
+Ignoring obsolete mdp entry 'cpp'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Setting the LD random seed to -1216779503
+Generated 330891 of the 330891 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 330891 of the 330891 1-4 parameter combinations
+Excluding 2 bonded neighbours molecule type 'SOL'
+Excluding 2 bonded neighbours molecule type 'SOL'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 3071997.00
+Estimate for the relative computational load of the PME mesh part: 0.26
+
+GROMACS reminds you: "I'm Gonna Get Medieval On Your Ass" (Pulp Fiction)
+
+turning all bonds into constraints...
+Analysing residue names:
+There are: 512000      Water residues
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.036 nm, buffer size 0.036 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 200x200x200, spacing 0.125 0.125 0.125
+This run will generate roughly 117 Mb of data
+INFO:    Using cached SIF image
+                      :-) GROMACS - gmx mdrun, 2018.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.2
+Executable:   /gromacs/bin.AVX2_256/gmx
+Data prefix:  /gromacs
+Working dir:  /group/pawsey/espn/ISC22preparation/isc-tutorial/exercises/gromacs_work
+Command line:
+  gmx mdrun -ntmpi 1 -nb gpu -pin on -v -noconfout -nsteps 5000 -s topol.tpr -ntomp 1
+
+Reading file topol.tpr, VERSION 2018.2 (single precision)
+Overriding nsteps with value passed on the command line: 5000 steps, 10 ps
+Changing nstlist from 10 to 80, rlist from 1 to 1.147
+
+
+Using 1 MPI thread
+Using 1 OpenMP thread 
+
+1 GPU auto-selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+
+Cannot change application clocks for Tesla V100-PCIE-16GB to optimal values due to insufficient permissions. Current values are (877,1245), max values are (877,1380).
+Please contact your admin to change application clocks.
+
+Cannot change application clocks for Tesla V100-PCIE-16GB to optimal values due to insufficient permissions. Current values are (877,1245), max values are (877,1380).
+Please contact your admin to change application clocks.
+
+Overriding thread affinity set outside gmx mdrun
+starting mdrun 'Water'
+5000 steps,     10.0 ps.
+step  160: timed with pme grid 200 200 200, coulomb cutoff 1.000: 10562.8 M-cycles
+step  320: timed with pme grid 168 168 168, coulomb cutoff 1.187: 11393.7 M-cycles
+step  480: timed with pme grid 144 144 144, coulomb cutoff 1.384: 12169.1 M-cycles
+step  640: timed with pme grid 160 160 160, coulomb cutoff 1.246: 11499.3 M-cycles
+step  800: timed with pme grid 168 168 168, coulomb cutoff 1.187: 11166.8 M-cycles
+step  960: timed with pme grid 192 192 192, coulomb cutoff 1.038: 10757.7 M-cycles
+step 1120: timed with pme grid 200 200 200, coulomb cutoff 1.000: 10612.9 M-cycles
+step 1280: timed with pme grid 160 160 160, coulomb cutoff 1.246: 11526.6 M-cycles
+step 1440: timed with pme grid 168 168 168, coulomb cutoff 1.187: 11242.2 M-cycles
+step 1600: timed with pme grid 192 192 192, coulomb cutoff 1.038: 10593.7 M-cycles
+step 1760: timed with pme grid 200 200 200, coulomb cutoff 1.000: 10632.4 M-cycles
+              optimal pme grid 200 200 200, coulomb cutoff 1.000
+step 5000, remaining wall clock time:     0 s          
+NOTE: 12 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      278.113      278.113      100.0
+                 (ns/day)    (hour/ns)
+Performance:        3.107        7.724
+
+GROMACS reminds you: "The time for theory is over" (J. Hajdu)

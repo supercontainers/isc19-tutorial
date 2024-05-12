@@ -1,5 +1,5 @@
 # MPI Dockerfile
-FROM nersc/ubuntu-mpi:18.04
+FROM nersc/ubuntu-mpi:22.10
 
 ADD helloworld.c /app/
 

@@ -1,9 +1,11 @@
 #!/bin/bash
 
 NTASKS="2"
-image="library://marcodelapierre/beta/openfoam:v1812"
+image="library://marcodelapierre/beta/openfoam:v2012"
 
 # this configuration depends on the host
+source ./set-mpi.sh
+#export MPICH_ROOT="/opt/spack"
 export MPICH_ROOT="/opt/intel/oneapi"
 export MPICH_LIBS="$( which mpirun )"
 export MPICH_LIBS="${MPICH_LIBS%/bin/mpirun*}/lib"

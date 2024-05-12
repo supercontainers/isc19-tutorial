@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=00:20:00
 
-image="docker://pawsey/mpich-base:3.1.4_ubuntu18.04"
+image="docker://quay.io/pawsey/mpich-base:3.1.4_ubuntu18.04"
 osu_dir="/usr/local/libexec/osu-micro-benchmarks/mpi"
 
 # this configuration depends on the host

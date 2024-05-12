@@ -24,7 +24,14 @@ This tutorial is supported by the Amazon AWS Machine Learning Research Awards. E
 
 After the tutorial, you can boot our tutorial image yourself on Amazon EC2 to run through the tutorial again. We recommend you use your own EC2 key and change the password.
 
-US-West-Oregon: ami-0fe12765123c6a840
+US-West-2 Oregon: ami-08ab931791269deeb
+
+
+### NERSC Training Accounts (optional)
+
+In addition to the AWS instances, you can also try running some of the Shifter-based excercises on NERSC's Perlmutter system, a Cray EX system.  To sign-up for a NERSC tutorial account, visit
+[https://iris.nersc.gov/train](https://iris.nersc.gov/train) and fill out the form.  The training code will be provided during the tutorial.  Please note that, due to security
+restrictions, access may be limited but all of the excercises can be done on the AWS instances.
 
 
 ### Materials repository
@@ -35,7 +42,7 @@ To run the examples yourself, you can download the materials with:
 cd ~
 git clone https://github.com/supercontainers/isc-tutorial.git
 cd isc-tutorial
-git checkout isc21
+git checkout isc23
 cd exercises
 ```
 

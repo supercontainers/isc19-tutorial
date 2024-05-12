@@ -1,0 +1,115 @@
+INFO:    Using cached SIF image
+2022-05-20 14:26:19.875495: I tensorflow/core/platform/cpu_feature_guard.cc:152] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-05-20 14:26:29.602934: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /device:GPU:0 with 14649 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:18:00.0, compute capability: 7.0
+2022-05-20 14:26:29.621984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /device:GPU:1 with 14649 MB memory:  -> device: 1, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0
+2022-05-20 14:26:29.649174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14649 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:18:00.0, compute capability: 7.0
+2022-05-20 14:26:29.649579: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 14649 MB memory:  -> device: 1, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0
+2022-05-20 14:26:30.502093: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:547] The `assert_cardinality` transformation is currently not handled by the auto-shard rewrite and will be removed.
+[name: "/device:CPU:0"
+device_type: "CPU"
+memory_limit: 268435456
+locality {
+}
+incarnation: 14544511292973197642
+xla_global_id: -1
+, name: "/device:GPU:0"
+device_type: "GPU"
+memory_limit: 15361114112
+locality {
+  bus_id: 1
+  links {
+    link {
+      device_id: 1
+      type: "StreamExecutor"
+      strength: 1
+    }
+  }
+}
+incarnation: 3275074143040864552
+physical_device_desc: "device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:18:00.0, compute capability: 7.0"
+xla_global_id: 416903419
+, name: "/device:GPU:1"
+device_type: "GPU"
+memory_limit: 15361114112
+locality {
+  bus_id: 2
+  numa_node: 1
+  links {
+    link {
+      type: "StreamExecutor"
+      strength: 1
+    }
+  }
+}
+incarnation: 1344381316328840416
+physical_device_desc: "device: 1, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0"
+xla_global_id: 2144165316
+]
+Downloading and preparing dataset mnist/3.0.1 (download: 11.06 MiB, generated: 21.00 MiB, total: 32.06 MiB) to /home/espn/tensorflow_datasets/mnist/3.0.1...
+Dl Completed...: 100%|██████████| 4/4 [00:01<00:00,  2.87 file/s]2022-05-20 16:19:46.331852: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14649 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:18:00.0, compute capability: 7.0
+2022-05-20 16:19:46.332380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 14649 MB memory:  -> device: 1, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0
+2022-05-20 16:19:47.189386: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:547] The `assert_cardinality` transformation is currently not handled by the auto-shard rewrite and will be removed.
+
+Dataset mnist downloaded and prepared to /home/espn/tensorflow_datasets/mnist/3.0.1. Subsequent calls will reuse this data.
+Number of devices: 2
+Epoch 1/12
+2022-05-20 14:26:43.796497: I tensorflow/stream_executor/cuda/cuda_dnn.cc:379] Loaded cuDNN version 8400
+2022-05-20 14:26:44.260172: I tensorflow/stream_executor/cuda/cuda_dnn.cc:379] Loaded cuDNN version 8400
+469/469 [==============================] - ETA: 0s - loss: 0.2531 - accuracy: 0.9283     
+Learning rate for epoch 1 is 0.0010000000474974513
+469/469 [==============================] - 27s 6ms/step - loss: 0.2531 - accuracy: 0.9283 - lr: 0.0010
+Epoch 2/12
+469/469 [==============================] - ETA: 0s - loss: 0.0836 - accuracy: 0.9762 
+Learning rate for epoch 2 is 0.0010000000474974513
+469/469 [==============================] - 4s 8ms/step - loss: 0.0836 - accuracy: 0.9762 - lr: 0.0010
+Epoch 3/12
+469/469 [==============================] - ETA: 0s - loss: 0.0585 - accuracy: 0.9826 
+Learning rate for epoch 3 is 0.0010000000474974513
+469/469 [==============================] - 4s 8ms/step - loss: 0.0585 - accuracy: 0.9826 - lr: 0.0010
+Epoch 4/12
+469/469 [==============================] - ETA: 0s - loss: 0.0365 - accuracy: 0.9898 
+Learning rate for epoch 4 is 9.999999747378752e-05
+469/469 [==============================] - 4s 8ms/step - loss: 0.0365 - accuracy: 0.9898 - lr: 1.0000e-04
+Epoch 5/12
+465/469 [============================>.] - ETA: 0s - loss: 0.0337 - accuracy: 0.9908 
+Learning rate for epoch 5 is 9.999999747378752e-05
+469/469 [==============================] - 4s 8ms/step - loss: 0.0338 - accuracy: 0.9908 - lr: 1.0000e-04
+Epoch 6/12
+467/469 [============================>.] - ETA: 0s - loss: 0.0321 - accuracy: 0.9912 
+Learning rate for epoch 6 is 9.999999747378752e-05
+469/469 [==============================] - 4s 8ms/step - loss: 0.0320 - accuracy: 0.9912 - lr: 1.0000e-04
+Epoch 7/12
+465/469 [============================>.] - ETA: 0s - loss: 0.0304 - accuracy: 0.9917 
+Learning rate for epoch 7 is 9.999999747378752e-05
+469/469 [==============================] - 4s 8ms/step - loss: 0.0305 - accuracy: 0.9917 - lr: 1.0000e-04
+Epoch 8/12
+469/469 [==============================] - ETA: 0s - loss: 0.0282 - accuracy: 0.9926 
+Learning rate for epoch 8 is 9.999999747378752e-06
+469/469 [==============================] - 4s 8ms/step - loss: 0.0282 - accuracy: 0.9926 - lr: 1.0000e-05
+Epoch 9/12
+463/469 [============================>.] - ETA: 0s - loss: 0.0278 - accuracy: 0.9927 
+Learning rate for epoch 9 is 9.999999747378752e-06
+469/469 [==============================] - 4s 8ms/step - loss: 0.0279 - accuracy: 0.9927 - lr: 1.0000e-05
+Epoch 10/12
+464/469 [============================>.] - ETA: 0s - loss: 0.0277 - accuracy: 0.9927 
+Learning rate for epoch 10 is 9.999999747378752e-06
+469/469 [==============================] - 4s 8ms/step - loss: 0.0277 - accuracy: 0.9927 - lr: 1.0000e-05
+Epoch 11/12
+466/469 [============================>.] - ETA: 0s - loss: 0.0275 - accuracy: 0.9929 
+Learning rate for epoch 11 is 9.999999747378752e-06
+469/469 [==============================] - 4s 8ms/step - loss: 0.0275 - accuracy: 0.9929 - lr: 1.0000e-05
+Epoch 12/12
+467/469 [============================>.] - ETA: 0s - loss: 0.0275 - accuracy: 0.9928 
+Learning rate for epoch 12 is 9.999999747378752e-06
+469/469 [==============================] - 4s 8ms/step - loss: 0.0274 - accuracy: 0.9929 - lr: 1.0000e-05
+2022-05-20 14:27:40.572328: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:547] The `assert_cardinality` transformation is currently not handled by the auto-shard rewrite and will be removed.
+
+Listing the content of the checkpoint_dir
+['ckpt_2.data-00000-of-00001', 'ckpt_10.data-00000-of-00001', 'ckpt_11.index', 'ckpt_7.index', 'ckpt_1.data-00000-of-00001', 'checkpoint', 'ckpt_5.data-00000-of-00001', 'ckpt_6.data-00000-of-00001', 'ckpt_8.data-00000-of-00001', 'ckpt_3.index', 'ckpt_2.index', 'ckpt_8.index', 'ckpt_4.index', 'ckpt_1.index', 'ckpt_3.data-00000-of-00001', 'ckpt_12.index', 'ckpt_5.index', 'ckpt_6.index', 'ckpt_7.data-00000-of-00001', 'ckpt_11.data-00000-of-00001', 'ckpt_9.data-00000-of-00001', 'ckpt_4.data-00000-of-00001', 'ckpt_9.index', 'ckpt_10.index', 'ckpt_12.data-00000-of-00001']
+79/79 [==============================] - 2s 7ms/step - loss: 0.0433 - accuracy: 0.9841
+2022-05-20 14:27:42.828806: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+
+Eval loss: 0.04329961538314819, Eval accuracy: 0.9840999841690063
+79/79 [==============================] - 0s 2ms/step - loss: 0.0433 - accuracy: 0.9841
+Saved Eval Loss: 0.043299607932567596, Saved Eval Accuracy: 0.9840999841690063

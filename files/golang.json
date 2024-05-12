@@ -1,0 +1,120 @@
+[
+    {
+        "Id": "7f157abc65790f9f770cdae8b17c2fac5183f98a632b5cf186dee17d3ea4d867",
+        "Digest": "sha256:d8f864bac466e488bb425a59ff9bc104828cd44d0985a8d2fcb5570a9250258a",
+        "RepoTags": [
+            "docker.io/library/golang:1.18.1-buster"
+        ],
+        "RepoDigests": [
+            "docker.io/library/golang@sha256:d8f864bac466e488bb425a59ff9bc104828cd44d0985a8d2fcb5570a9250258a",
+            "docker.io/library/golang@sha256:f1e97d64a50f4c2b4fa61211f5206e636a54f992a047d192d6d068fbcd1946c3"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2022-04-20T22:28:29.609431856Z",
+        "Config": {
+            "Env": [
+                "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOLANG_VERSION=1.18.1",
+                "GOPATH=/go"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "WorkingDir": "/go"
+        },
+        "Version": "20.10.12",
+        "Author": "",
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 929774290,
+        "VirtualSize": 929774290,
+        "GraphDriver": {
+            "Name": "overlay",
+            "Data": {
+                "LowerDir": "/home/eduardo/.local/share/containers/storage/overlay/e1479c5af0eec492b4942886f33cea901664fcbf30a90cce2ec4f94cbe849399/diff:/home/eduardo/.local/share/containers/storage/overlay/f88ec5845fe9da6e7a4c4278b464d995af00477fb3d5ca6bb8c25e931ee4afb5/diff:/home/eduardo/.local/share/containers/storage/overlay/2819380fc5af7064586ce4a9fc8956257b3e858f1aa9c13eb7d9a9d69e6fad5a/diff:/home/eduardo/.local/share/containers/storage/overlay/989c0ec34539574af4207a1687000b58b0586142096cf0e746ed6079cdf6131f/diff:/home/eduardo/.local/share/containers/storage/overlay/08209b595f6969502c34ba6021037ab0d99b422cf007bcd6da3912f14227bf2a/diff:/home/eduardo/.local/share/containers/storage/overlay/b9fd5db9c9a6470a6c668ade7fa1faf299b734be4f20fef105ec719ac161cee4/diff",
+                "UpperDir": "/home/eduardo/.local/share/containers/storage/overlay/865684fea3913d035c50efe6e3f679ca43c1386ed7e2e4c2b78878e58a331a11/diff",
+                "WorkDir": "/home/eduardo/.local/share/containers/storage/overlay/865684fea3913d035c50efe6e3f679ca43c1386ed7e2e4c2b78878e58a331a11/work"
+            }
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:b9fd5db9c9a6470a6c668ade7fa1faf299b734be4f20fef105ec719ac161cee4",
+                "sha256:5d253e59e5233a8eeebb8acdf660c9a5dff6f064656a00fe856e45cd091be47f",
+                "sha256:85fe0038088133c12b3556a09e7817998e2043b1dc73630561a0d446d969f755",
+                "sha256:957a6eed8d1f1779b315b725c58f42fa20dd6bd59dbea586bf05b9dd32f1d3f2",
+                "sha256:0526a14b6add2837dc89f4e600994984b77d3fac897b4a494dcfe53d8fa1974a",
+                "sha256:7b3901e2c555ecef791cc80f2c81499a6cc94af0c54d3ae47ee421b437c903ee",
+                "sha256:874249d61bed46f7b94af7e81ed64f60b33c363f1a022e69699e2dfa538e123b"
+            ]
+        },
+        "Labels": null,
+        "Annotations": {},
+        "ManifestType": "application/vnd.docker.distribution.manifest.v2+json",
+        "User": "",
+        "History": [
+            {
+                "created": "2022-04-20T04:43:37.180912862Z",
+                "created_by": "/bin/sh -c #(nop) ADD file:7c5789fb822bda2652d7addee832c5a3d71733f0f94f97d89b0c5570c0840829 in / "
+            },
+            {
+                "created": "2022-04-20T04:43:37.732864614Z",
+                "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                "empty_layer": true
+            },
+            {
+                "created": "2022-04-20T06:59:01.964685664Z",
+                "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t; \trm -rf /var/lib/apt/lists/*"
+            },
+            {
+                "created": "2022-04-20T06:59:07.088636152Z",
+                "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg \u003e /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+            },
+            {
+                "created": "2022-04-20T06:59:22.097083802Z",
+                "created_by": "/bin/sh -c apt-get update \u0026\u0026 apt-get install -y --no-install-recommends \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t\u0026\u0026 rm -rf /var/lib/apt/lists/*"
+            },
+            {
+                "created": "2022-04-20T22:28:14.68738972Z",
+                "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tg++ \t\tgcc \t\tlibc6-dev \t\tmake \t\tpkg-config \t; \trm -rf /var/lib/apt/lists/*"
+            },
+            {
+                "created": "2022-04-20T22:28:15.101594936Z",
+                "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "empty_layer": true
+            },
+            {
+                "created": "2022-04-20T22:28:15.202569938Z",
+                "created_by": "/bin/sh -c #(nop)  ENV GOLANG_VERSION=1.18.1",
+                "empty_layer": true
+            },
+            {
+                "created": "2022-04-20T22:28:27.638161981Z",
+                "created_by": "/bin/sh -c set -eux; \tarch=\"$(dpkg --print-architecture)\"; arch=\"${arch##*-}\"; \turl=; \tcase \"$arch\" in \t\t'amd64') \t\t\turl='https://dl.google.com/go/go1.18.1.linux-amd64.tar.gz'; \t\t\tsha256='b3b815f47ababac13810fc6021eb73d65478e0b2db4b09d348eefad9581a2334'; \t\t\t;; \t\t'armel') \t\t\texport GOARCH='arm' GOARM='5' GOOS='linux'; \t\t\t;; \t\t'armhf') \t\t\turl='https://dl.google.com/go/go1.18.1.linux-armv6l.tar.gz'; \t\t\tsha256='9edc01c8e7db64e9ceeffc8258359e027812886ceca3444e83c4eb96ddb068ee'; \t\t\t;; \t\t'arm64') \t\t\turl='https://dl.google.com/go/go1.18.1.linux-arm64.tar.gz'; \t\t\tsha256='56a91851c97fb4697077abbca38860f735c32b38993ff79b088dac46e4735633'; \t\t\t;; \t\t'i386') \t\t\turl='https://dl.google.com/go/go1.18.1.linux-386.tar.gz'; \t\t\tsha256='9a8df5dde9058f08ac01ecfaae42534610db398e487138788c01da26a0d41ff9'; \t\t\t;; \t\t'mips64el') \t\t\texport GOARCH='mips64le' GOOS='linux'; \t\t\t;; \t\t'ppc64el') \t\t\turl='https://dl.google.com/go/go1.18.1.linux-ppc64le.tar.gz'; \t\t\tsha256='33db623d1eecf362fe365107c12efc90eff0b9609e0b3345e258388019cb552a'; \t\t\t;; \t\t's390x') \t\t\turl='https://dl.google.com/go/go1.18.1.linux-s390x.tar.gz'; \t\t\tsha256='5d9301324148ed4dbfaa0800da43a843ffd65c834ee73fcf087255697c925f74'; \t\t\t;; \t\t*) echo \u003e\u00262 \"error: unsupported architecture '$arch' (likely packaging update needed)\"; exit 1 ;; \tesac; \tbuild=; \tif [ -z \"$url\" ]; then \t\tbuild=1; \t\turl='https://dl.google.com/go/go1.18.1.src.tar.gz'; \t\tsha256='efd43e0f1402e083b73a03d444b7b6576bb4c539ac46208b63a916b69aca4088'; \t\techo \u003e\u00262; \t\techo \u003e\u00262 \"warning: current architecture ($arch) does not have a compatible Go binary release; will be building from source\"; \t\techo \u003e\u00262; \tfi; \t\twget -O go.tgz.asc \"$url.asc\"; \twget -O go.tgz \"$url\" --progress=dot:giga; \techo \"$sha256 *go.tgz\" | sha256sum -c -; \t\tGNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; \tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796'; \tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys '2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13'; \tgpg --batch --verify go.tgz.asc go.tgz; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" go.tgz.asc; \t\ttar -C /usr/local -xzf go.tgz; \trm go.tgz; \t\tif [ -n \"$build\" ]; then \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \t\tapt-get update; \t\tapt-get install -y --no-install-recommends golang-go; \t\t\t\t( \t\t\tcd /usr/local/go/src; \t\t\texport GOROOT_BOOTSTRAP=\"$(go env GOROOT)\" GOHOSTOS=\"$GOOS\" GOHOSTARCH=\"$GOARCH\"; \t\t\t./make.bash; \t\t); \t\t\t\tapt-mark auto '.*' \u003e /dev/null; \t\tapt-mark manual $savedAptMark \u003e /dev/null; \t\tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\trm -rf /var/lib/apt/lists/*; \t\t\t\trm -rf \t\t\t/usr/local/go/pkg/*/cmd \t\t\t/usr/local/go/pkg/bootstrap \t\t\t/usr/local/go/pkg/obj \t\t\t/usr/local/go/pkg/tool/*/api \t\t\t/usr/local/go/pkg/tool/*/go_bootstrap \t\t\t/usr/local/go/src/cmd/dist/dist \t\t; \tfi; \t\tgo version"
+            },
+            {
+                "created": "2022-04-20T22:28:28.825361004Z",
+                "created_by": "/bin/sh -c #(nop)  ENV GOPATH=/go",
+                "empty_layer": true
+            },
+            {
+                "created": "2022-04-20T22:28:28.916195707Z",
+                "created_by": "/bin/sh -c #(nop)  ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "empty_layer": true
+            },
+            {
+                "created": "2022-04-20T22:28:29.514751109Z",
+                "created_by": "/bin/sh -c mkdir -p \"$GOPATH/src\" \"$GOPATH/bin\" \u0026\u0026 chmod -R 777 \"$GOPATH\""
+            },
+            {
+                "created": "2022-04-20T22:28:29.609431856Z",
+                "created_by": "/bin/sh -c #(nop) WORKDIR /go",
+                "empty_layer": true
+            }
+        ],
+        "NamesHistory": [
+            "docker.io/library/golang:1.18.1-buster"
+        ]
+    }
+]
