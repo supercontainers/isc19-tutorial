@@ -61,26 +61,3 @@ You can ask questions verbally or with this [Google Doc](https://docs.google.com
 Please append your question below the others in the document.
 
 We have also created a Slack Team for this.  The invitation link is [here](https://join.slack.com/t/hpc-containers/shared_invite/enQtODI3NzY1NDU4OTk5LTUxOTgyOWJmYjIwOWI5YWU2MzBhZDI3Zjc1YmZmMjAxZjgzYzk4ZWEwNmFlNzlkOWI0MGNlZDNlMTBhYTBlOWY).
-
-## Schedule (TBD)
-
-14:00 - 14:15 Introduction to containers in HPC (Shane)  
-Including defining jargon (containers, images, registries/repos,..)  
-
-14:15 - 14:55 Build and run your first container with Podman (Shane)  
-Including also minimal pull and run examples, to define these concepts  
-
-14:55 - 15:30 Deploy containers on a supercomputer (Marco)  
-
-15:30 - 16:00 High-performance containers (Marco)  
-
-16:00 - 16:30 BREAK
-
-16:30 - 17:05 Best practices (Shane)  
-
-17:05 - 17:35 E4S containers initiative (Sameer)  
-
-17:35 - 17:55 Advanced container builds (Eduardo)  
-
-17:55 - 18:00 Wrap-up and final Q&A  
-
