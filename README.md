@@ -16,6 +16,7 @@ Container computing has revolutionized the way applications are developed and de
 
 ## Questions
 
-Please see the google doc linked in the rendered version.
+You can ask questions verbally or with this [Google Doc](https://docs.google.com/document/d/11gMZ-T7iA5XiRWPLYIqX7Gqv7RMb-NF9kzGYHrnOi04/edit?usp=sharing).
+Please append your question below the others in the document.
 
-We have also created a Slack Team for this.  The invitation link is in the Google Doc.
+We have also created a Slack Team for this.  The invitation link is [here](https://join.slack.com/t/hpc-containers/shared_invite/enQtODI3NzY1NDU4OTk5LTUxOTgyOWJmYjIwOWI5YWU2MzBhZDI3Zjc1YmZmMjAxZjgzYzk4ZWEwNmFlNzlkOWI0MGNlZDNlMTBhYTBlOWY).
